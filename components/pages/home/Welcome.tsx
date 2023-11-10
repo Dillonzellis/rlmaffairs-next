@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Welcome = () => {
   return (
-    <section className="grid grid-cols-2 max-w-[1200px] mx-auto">
+    <section className="mx-auto grid max-w-[1200px] grid-cols-2">
       <div>
         <h1>
           Welcome to <span className="text-brandingGold-400">RLM Affairs</span>
