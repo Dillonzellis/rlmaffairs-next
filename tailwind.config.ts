@@ -12,6 +12,9 @@ const config: Config = {
         brandingGold: {
           400: "var(--brandingGold-400)",
         },
+        brandingGreen:{
+          400: "var(--brandingGreen-400)",
+        }
       },
     },
   },
