@@ -1,27 +1,45 @@
+import { Container } from "@/components/Container";
+import { ButtonLink } from "@/components/ui/ButtonLink";
+import { Heading } from "@/components/ui/Heading";
+import { Section } from "@/components/ui/Section";
 import Image from "next/image";
 
 export const Welcome = () => {
   return (
-    <section className="mx-auto grid max-w-[1200px] grid-cols-2">
-      <div>
-        <h1>
-          Welcome to <span className="text-brandingGold-400">RLM Affairs</span>
-        </h1>
-        <div className="italic">
-          Where love and celebration come together beautifully.
+    <Section>
+      <Container className="flex items-center">
+        <div className="flex max-w-prose flex-col gap-4">
+          <Heading level="h1">
+            Welcome to{" "}
+            <span className="font-serif font-semibold text-brandingGold-400">
+              RLM Affairs
+            </span>
+          </Heading>
+          <div className="text-xl italic">
+            Where love and celebration come together beautifully.
+          </div>
+          <hr className="max-w-xs" />
+          <p className="max-w-xl leading-8">
+            Step into the world of RLM Affairs, from intimate celebrations to
+            lavish receptions, our dedicated team crafts bespoke experiences,
+            ensuring each moment is as unique as the celebration. Offering a
+            curated suite of services from gourmet catering, exquisite florals,
+            meticulous event planning, to creating magical receptions.
+          </p>
+          <div>
+            <ButtonLink>schedule a tour</ButtonLink>
+          </div>
         </div>
-        <hr />
-        <p>
-          Step into the world of RLM Affairs, from intimate celebrations to
-          lavish receptions, our dedicated team crafts bespoke experiences,
-          ensuring each moment is as unique as the celebration. Offering a
-          curated suite of services from gourmet catering, exquisite florals,
-          meticulous event planning, to creating magical receptions.
-        </p>
-      </div>
-      <div>
-        <Image src="/logo-gold.png" alt="" height={384} width={384} />
-      </div>
-    </section>
+        <div className="mx-auto">
+          <Image
+            src="/logo-gold.png"
+            alt=""
+            height={384}
+            width={384}
+            className="drop-shadow-sm"
+          />
+        </div>
+      </Container>
+    </Section>
   );
 };
