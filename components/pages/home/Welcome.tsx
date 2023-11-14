@@ -2,6 +2,7 @@ import { Container } from "@/components/Container";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
+import { BodyText } from "@/components/ui/BodyText";
 import Image from "next/image";
 
 export const Welcome = () => {
@@ -19,13 +20,13 @@ export const Welcome = () => {
             Where love and celebration come together beautifully.
           </div>
           <hr className="max-w-xs" />
-          <p className="max-w-xl leading-8">
+          <BodyText className="max-w-xl">
             Step into the world of RLM Affairs, from intimate celebrations to
             lavish receptions, our dedicated team crafts bespoke experiences,
             ensuring each moment is as unique as the celebration. Offering a
             curated suite of services from gourmet catering, exquisite florals,
             meticulous event planning, to creating magical receptions.
-          </p>
+          </BodyText>
           <div>
             <ButtonLink>schedule a tour</ButtonLink>
           </div>
