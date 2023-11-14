@@ -4,6 +4,12 @@ import { SmallFeats } from "@/components/pages/home/SmallFeats";
 import { CTAHome } from "@/components/pages/home/CTAHome";
 import { FeatSection } from "@/components/pages/home/FeatSection";
 import { FullImgSection } from "@/components/pages/home/FullImgSection";
+import { HomeSlider } from "@/components/pages/home/HomeSlider";
+import { MarqueeSection } from "@/components/pages/home/MarqueeSection";
+
+// TODO: add parchment bg
+// TODO: Fix all shadows
+// TODO: add flowers to bg
 
 export default function Home() {
   return (
@@ -22,6 +28,9 @@ export default function Home() {
       <CTAHome />
       <FeatSection />
       <FullImgSection />
+      <FeatSection />
+      <HomeSlider />
+      <MarqueeSection />
     </main>
   );
 }

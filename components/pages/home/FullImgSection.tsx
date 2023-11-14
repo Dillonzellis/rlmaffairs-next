@@ -12,9 +12,11 @@ export const FullImgSection = () => {
       <div className="relative">
         <Image src="/floral-artist.png" alt="" height={724} width={1282} />
         <Container>
-          <div className="absolute left-8 top-1/2 -translate-y-1/2 space-y-6 rounded-xl bg-brandingGreen-400/80 px-6 py-10 text-white">
-            <Heading level="h2">Floral Artist</Heading>
-            <BodyText className="max-w-lg text-xl">
+          <div className="absolute left-8 top-1/2 -translate-y-1/2 space-y-6 rounded-xl bg-brandingGreen-400/80 px-6 py-10 text-white backdrop-blur">
+            <Heading level="h2" size="largest">
+              Floral Artist
+            </Heading>
+            <BodyText className="max-w-lg text-lg leading-8">
               RLM Affairs is a full-service florist serving North Georgia for 40
               years. Our award winning designers offer exquisite attention to
               detail. Whether it’s a single rose or decor for an entire Gala
