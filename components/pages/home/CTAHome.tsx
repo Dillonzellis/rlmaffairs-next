@@ -3,6 +3,8 @@ import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/Container";
 import { BodyText } from "@/components/ui/BodyText";
 
+//TODO: fix hr with image
+
 export const CTAHome = () => {
   return (
     <Section>

@@ -5,6 +5,10 @@ import { Section } from "@/components/ui/Section";
 import { BodyText } from "@/components/ui/BodyText";
 import Image from "next/image";
 
+// TODO: fix serif font
+// TODO: fix spacing
+// TODO: add shadow to gold logo
+
 export const Welcome = () => {
   return (
     <Section>

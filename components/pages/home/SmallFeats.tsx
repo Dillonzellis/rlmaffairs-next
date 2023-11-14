@@ -3,6 +3,9 @@ import { Section } from "@/components/ui/Section";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
+// TODO: make reusuable comps with props and alternating colors
+// TODO: fix opacity with bg color opacity
+
 const Feat = () => {
   return (
     <div className="relative">

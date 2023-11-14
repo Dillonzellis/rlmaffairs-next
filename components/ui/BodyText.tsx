@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 type BodyTextProps = ChildrenProps & React.HTMLAttributes<HTMLElement>;
 
-// TODO: make variance for large text
+// TODO: make variance for large text and add leading
 
 export const BodyText = ({ children, className, ...props }: BodyTextProps) => {
   return (

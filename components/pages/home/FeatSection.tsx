@@ -5,6 +5,8 @@ import { Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 import Image from "next/image";
 
+//TODO: make reuseable with props and switching sides
+
 export const FeatSection = () => {
   return (
     <Section>
