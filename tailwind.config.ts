@@ -10,11 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         brandingGold: {
-          400: "var(--brandingGold-400)",
+          400: "#8e744b",
         },
-        brandingGreen:{
-          400: "var(--brandingGreen-400)",
-        }
+        brandingGreen: {
+          400: "#1B5B32",
+        },
       },
     },
   },
