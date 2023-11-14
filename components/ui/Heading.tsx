@@ -12,8 +12,8 @@ type HeadingProps = HeadingVariants & {
 const HeadingVariants = cva("", {
   variants: {
     size: {
-      largest: "text-5xl",
-      large: "",
+      largest: "text-7xl",
+      large: "text-5xl",
       medium: "",
     },
     weight: {
@@ -23,7 +23,7 @@ const HeadingVariants = cva("", {
     },
   },
   defaultVariants: {
-    size: "largest",
+    size: "large",
     weight: "regular",
   },
 });
