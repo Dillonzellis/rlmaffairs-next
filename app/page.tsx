@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Welcome } from "@/components/pages/home/Welcome";
+import { SmallFeats } from "@/components/pages/home/SmallFeats";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         />
       </div>
       <Welcome />
+      <SmallFeats />
     </main>
   );
 }
