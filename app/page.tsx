@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Welcome } from "@/components/pages/home/Welcome";
 import { SmallFeats } from "@/components/pages/home/SmallFeats";
+import { CTAHome } from "@/components/pages/home/CTAHome";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <Welcome />
       <SmallFeats />
+      <CTAHome />
     </main>
   );
 }
