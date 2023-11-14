@@ -1,5 +1,12 @@
 import { ChildrenProps } from "@/lib/types";
+import { cn } from "@/lib/utils";
 
-export const Section = ({ children }: ChildrenProps) => {
-  return <section className="py-28">{children}</section>;
+type SectionProps = ChildrenProps & React.HTMLAttributes<HTMLElement>;
+
+export const Section = ({ children, className, ...props }: SectionProps) => {
+  return (
+    <section className={cn("py-28", className)} {...props}>
+      {children}
+    </section>
+  );
 };
