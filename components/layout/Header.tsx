@@ -1,10 +1,12 @@
 import Image from "next/image";
 
+// TODO: make logo quality
+
 export const Header = () => {
   return (
     <header>
       <nav>
-        <ul className="flex gap-8 justify-center items-center">
+        <ul className="flex items-center justify-center gap-8">
           <li>Venue</li>
           <li>Catering</li>
           <li>
