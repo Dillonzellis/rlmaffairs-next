@@ -15,6 +15,12 @@ const config: Config = {
         brandingGreen: {
           400: "#1B5B32",
         },
+        brandingBlue: {
+          900: "#07111F",
+        },
+        brandingGrey: {
+          400: "#BDB7B7",
+        },
       },
     },
   },
