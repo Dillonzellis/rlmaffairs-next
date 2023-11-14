@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Welcome } from "@/components/pages/home/Welcome";
 import { SmallFeats } from "@/components/pages/home/SmallFeats";
 import { CTAHome } from "@/components/pages/home/CTAHome";
+import { FeatSection } from "@/components/pages/home/FeatSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Welcome />
       <SmallFeats />
       <CTAHome />
+      <FeatSection />
     </main>
   );
 }
