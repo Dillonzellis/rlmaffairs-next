@@ -1,13 +1,40 @@
-import { ChildrenProps } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { VariantProps, cva } from "class-variance-authority";
 
-type BodyTextProps = ChildrenProps & React.HTMLAttributes<HTMLElement>;
+type BodyTextVariants = VariantProps<typeof BodyTextVariants>;
 
-// TODO: make variance for large text and add leading
+type BodyTextProps = BodyTextVariants & React.HTMLAttributes<HTMLElement>;
 
-export const BodyText = ({ children, className, ...props }: BodyTextProps) => {
+const BodyTextVariants = cva("", {
+  variants: {
+    size: {
+      normal: "",
+      large: "",
+    },
+    leading: {
+      none: "",
+      regular: "leading-8",
+      large: "",
+    },
+  },
+  defaultVariants: {
+    size: "normal",
+    leading: "regular",
+  },
+});
+
+export const BodyText = ({
+  children,
+  className,
+  size,
+  leading,
+  ...props
+}: BodyTextProps) => {
   return (
-    <p className={cn("leading-8", className)} {...props}>
+    <p
+      className={cn(BodyTextVariants({ size, leading }), className)}
+      {...props}
+    >
       {children}
     </p>
   );
