@@ -12,7 +12,6 @@ import Image from "next/image";
 // TODO: add flowers to bg
 // TODO: fix h tags order
 // TODO: fix text colors all white or black?
-// TODO: fix text colors all white or black?
 
 export default function Home() {
   return (
