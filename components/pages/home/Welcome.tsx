@@ -11,7 +11,14 @@ import Image from "next/image";
 
 export const Welcome = () => {
   return (
-    <Section>
+    <Section className="relative">
+      <Image
+        src="/leaves-left-1.png"
+        alt=""
+        width={273}
+        height={205}
+        className="absolute -top-[1rem]"
+      />
       <Container className="flex items-center">
         <div className="flex max-w-prose flex-col gap-4">
           <Heading level="h1">
@@ -45,6 +52,13 @@ export const Welcome = () => {
           />
         </div>
       </Container>
+      <Image
+        src="/leaves-right-1.png"
+        alt=""
+        width={117}
+        height={279}
+        className="absolute right-0 top-1/3"
+      />
     </Section>
   );
 };
