@@ -14,7 +14,7 @@ const HeadingVariants = cva("", {
     size: {
       largest: "text-7xl",
       large: "text-5xl",
-      medium: "",
+      medium: "text-3xl",
     },
     weight: {
       light: "",
