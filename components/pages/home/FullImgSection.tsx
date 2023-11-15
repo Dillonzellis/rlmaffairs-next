@@ -16,7 +16,7 @@ export const FullImgSection = () => {
             <Heading level="h2" size="largest">
               Floral Artist
             </Heading>
-            <BodyText className="max-w-lg text-lg leading-8">
+            <BodyText size="large" className="max-w-lg">
               RLM Affairs is a full-service florist serving North Georgia for 40
               years. Our award winning designers offer exquisite attention to
               detail. Whether it’s a single rose or decor for an entire Gala
