@@ -9,7 +9,7 @@ const BodyTextVariants = cva("", {
   variants: {
     size: {
       normal: "",
-      large: "",
+      large: "text-lg",
     },
     leading: {
       none: "",
