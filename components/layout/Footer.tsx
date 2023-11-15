@@ -67,13 +67,6 @@ const FooterLinksWrapper = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between py-8 text-white">
-          <div>© 2023 RLM Affairs LLC.</div>
-          <div>
-            <div>Privacy policy</div>
-            <div>Terms of service</div>
-          </div>
-        </div>
       </Container>
     </Section>
   );
@@ -105,6 +98,17 @@ export const Footer = () => {
         <Image src="/footer-sparkle.png" alt="" width={1282} height={647} />
       </Section>
       <FooterLinksWrapper />
+      <div className="bg-brandingBlue-900">
+        <Container>
+          <div className="flex justify-between py-8 text-sm text-white">
+            <div>© 2023 RLM Affairs LLC.</div>
+            <div className="flex gap-8">
+              <div>Privacy policy</div>
+              <div>Terms of service</div>
+            </div>
+          </div>
+        </Container>
+      </div>
     </>
   );
 };
