@@ -3,6 +3,7 @@ type ButtonLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 //TODO: add hover animations
 //TODO: add white variance
 //TODO: add shadows
+//TODO: Link vs a tag
 
 export const ButtonLink = ({ children, ...props }: ButtonLinkProps) => {
   return (
