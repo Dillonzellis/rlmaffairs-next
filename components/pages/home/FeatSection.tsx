@@ -21,7 +21,7 @@ export const FeatSection = () => {
           />
         </div>
         <div className="col-span-4 space-y-8">
-          <Heading level="h3">Venue Feature</Heading>
+          <Heading level="h2">Venue Feature</Heading>
           <BodyText>
             Floral Showroom: RLM Affairs is a full-service florist serving North
             Georgia for 40 years. Our award winning designers offer exquisite

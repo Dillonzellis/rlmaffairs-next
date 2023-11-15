@@ -7,10 +7,7 @@ import { SmallFeats } from "@/components/pages/home/SmallFeats";
 import { Welcome } from "@/components/pages/home/Welcome";
 import Image from "next/image";
 
-// TODO: add parchment bg
 // TODO: Fix all shadows
-// TODO: add flowers to bg
-// TODO: fix h tags order
 // TODO: fix text colors all white or black?
 
 export default function Home() {
