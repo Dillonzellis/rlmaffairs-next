@@ -12,6 +12,7 @@ import { MarqueeSection } from "@/components/pages/home/MarqueeSection";
 // TODO: add flowers to bg
 // TODO: fix h tags order
 // TODO: fix text colors all white or black?
+// TODO: Make Image component with rounded styles and variants rounded
 
 export default function Home() {
   return (
