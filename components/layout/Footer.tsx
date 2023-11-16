@@ -25,7 +25,7 @@ const FooterLink = ({ children, ...props }: FooterLinkProps) => {
 };
 
 const FooterLinkHeader = ({ children }: ChildrenProps) => {
-  return <div className="text-3xl text-white/60">{children}</div>;
+  return <div className="text-3xl font-light text-white/60">{children}</div>;
 };
 
 const FooterLinksWrapper = () => {
