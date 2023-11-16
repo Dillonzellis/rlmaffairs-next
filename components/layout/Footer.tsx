@@ -18,14 +18,14 @@ const FooterCol = ({ children }: ChildrenProps) => {
 
 const FooterLink = ({ children, ...props }: FooterLinkProps) => {
   return (
-    <a className="text-3xl font-medium text-white" {...props}>
+    <a className="text-3xl text-white" {...props}>
       {children}
     </a>
   );
 };
 
 const FooterLinkHeader = ({ children }: ChildrenProps) => {
-  return <div className="text-3xl font-medium text-white/60">{children}</div>;
+  return <div className="text-3xl text-white/60">{children}</div>;
 };
 
 const FooterLinksWrapper = () => {
@@ -49,7 +49,7 @@ const FooterLinksWrapper = () => {
             ))}
           </FooterCol>
           <FooterCol>
-            <FooterLinkHeader>Socials</FooterLinkHeader>
+            <FooterLinkHeader>Social</FooterLinkHeader>
             {footerLinks3.map((link) => (
               <FooterLink key={link.label} href={link.href}>
                 {link.label}
