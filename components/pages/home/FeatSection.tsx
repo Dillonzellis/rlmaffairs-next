@@ -5,33 +5,72 @@ import { Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 import Image from "next/image";
 
-//TODO: make reuseable with props and switching sides
+//TODO: img shadows
 
-export const FeatSection = () => {
+type FeatSectionProps = {
+  imgLeft?: boolean;
+  imgSrc: string;
+  imgAlt: string;
+  heading: string;
+  body: string;
+  linkLabel: string;
+  link?: string;
+};
+
+const ImgCol = ({
+  imgSrc,
+  imgAlt,
+}: Pick<FeatSectionProps, "imgSrc" | "imgAlt">) => {
+  return (
+    <div className="col-span-8">
+      <Image
+        src={imgSrc}
+        alt={imgAlt}
+        height={574}
+        width={787}
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+  );
+};
+
+const ContentCol = ({
+  heading,
+  body,
+  linkLabel,
+}: Pick<FeatSectionProps, "heading" | "body" | "linkLabel">) => {
+  return (
+    <div className="col-span-4 space-y-8">
+      <Heading level="h2">{heading}</Heading>
+      <BodyText>{body}</BodyText>
+      <ButtonLink>{linkLabel}</ButtonLink>
+    </div>
+  );
+};
+
+export const FeatSection = ({
+  imgLeft,
+  imgSrc,
+  imgAlt,
+  heading,
+  body,
+  linkLabel,
+  link,
+}: FeatSectionProps) => {
   return (
     <Section>
       <Container className="grid grid-cols-12 items-center gap-12">
-        <div className="col-span-8">
-          <Image
-            src="/venue-feat.png"
-            alt=""
-            height={574}
-            width={787}
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="col-span-4 space-y-8">
-          <Heading level="h2">Venue Feature</Heading>
-          <BodyText>
-            Floral Showroom: RLM Affairs is a full-service florist serving North
-            Georgia for 40 years. Our award winning designers offer exquisite
-            attention to detail. Whether it’s a single rose or decor for an
-            entire Gala every bloom is hand picked and sourced eco friendly. Our
-            retail storefront offers modern & unique items keeping everyone in
-            mind
-          </BodyText>
-          <ButtonLink>schedule a tour</ButtonLink>
-        </div>
+        {imgLeft ? (
+          <>
+            <ImgCol imgSrc={imgSrc} imgAlt={imgAlt} />
+            <ContentCol heading={heading} body={body} linkLabel={linkLabel} />
+          </>
+        ) : (
+          <>
+            <ContentCol heading={heading} body={body} linkLabel={linkLabel} />
+            <ImgCol imgSrc={imgSrc} imgAlt={imgAlt} />
+          </>
+        )}
       </Container>
     </Section>
   );
