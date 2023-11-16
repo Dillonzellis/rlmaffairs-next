@@ -34,13 +34,22 @@ export default function Home() {
         linkLabel="schedule a tour"
       />
       <FullImgSection />
-      <FeatSection
-        imgSrc="/catering-feat.png"
-        imgAlt={""}
-        heading="Renowned Catering"
-        body="Floral Showroom: RLM Affairs is a full-service florist serving North Georgia for 40 years. Our award winning designers offer exquisite attention to detail. Whether it’s a single rose or decor for an entire Gala every bloom is hand picked and sourced eco friendly. Our retail storefront offers modern & unique items keeping everyone in mind"
-        linkLabel="have a taste"
-      />
+      <div className="relative">
+        <Image
+          src="/leaves-right-2.png"
+          alt=""
+          width={119}
+          height={440}
+          className="absolute right-0 top-1/3"
+        />
+        <FeatSection
+          imgSrc="/catering-feat.png"
+          imgAlt={""}
+          heading="Renowned Catering"
+          body="Floral Showroom: RLM Affairs is a full-service florist serving North Georgia for 40 years. Our award winning designers offer exquisite attention to detail. Whether it’s a single rose or decor for an entire Gala every bloom is hand picked and sourced eco friendly. Our retail storefront offers modern & unique items keeping everyone in mind"
+          linkLabel="have a taste"
+        />
+      </div>
       <HomeSlider />
       <MarqueeSection />
     </main>
