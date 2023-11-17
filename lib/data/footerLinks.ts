@@ -1,56 +1,29 @@
-export const footerLinks1 = [
+export const footerLinks = [
   {
-    label: "Venue",
-    href: "",
+    title: "RLM Affairs",
+    links: [
+      { label: "Venue", href: "/venue" },
+      { label: "Florals", href: "/florals" },
+      { label: "Event Planning", href: "/event-planning" },
+      { label: "Our Story", href: "/our-story" },
+    ],
   },
   {
-    label: "Florals",
-    href: "",
+    title: null,
+    links: [
+      { label: "Catering Menu", href: "/catering-menu" },
+      { label: "Floor Plan", href: "/floor-plan" },
+      { label: "Event Planning", href: "/event-planning" },
+      { label: "FAQ", href: "/faq" },
+    ],
   },
   {
-    label: "Event Planning",
-    href: "",
-  },
-  {
-    label: "Our Story",
-    href: "",
-  },
-];
-
-export const footerLinks2 = [
-  {
-    label: "Catering Menu",
-    href: "",
-  },
-  {
-    label: "Floor Plan",
-    href: "",
-  },
-  {
-    label: "Event Planning",
-    href: "",
-  },
-  {
-    label: "FAQ",
-    href: "",
-  },
-];
-
-export const footerLinks3 = [
-  {
-    label: "Instagram",
-    href: "",
-  },
-  {
-    label: "Facebook",
-    href: "",
-  },
-  {
-    label: "Facebook",
-    href: "",
-  },
-  {
-    label: "The Knot",
-    href: "",
+    title: "Social",
+    links: [
+      { label: "Instagram", href: "/instagram" },
+      { label: "Facebook", href: "/facebook" },
+      { label: "Twitter", href: "/twitter" },
+      { label: "The Knot", href: "/the-knot" },
+    ],
   },
 ];

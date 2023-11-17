@@ -1,14 +1,10 @@
+import { Container } from "@/components/Container";
+import { ButtonLink } from "@/components/ui/ButtonLink";
+import { Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
-import { Container } from "../Container";
-import { Heading } from "../ui/Heading";
-import { ButtonLink } from "../ui/ButtonLink";
-import Image from "next/image";
+import { footerLinks } from "@/lib/data/footerLinks";
 import { ChildrenProps } from "@/lib/types";
-import {
-  footerLinks1,
-  footerLinks2,
-  footerLinks3,
-} from "@/lib/data/footerLinks";
+import Image from "next/image";
 
 type FooterLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
@@ -33,29 +29,16 @@ const FooterLinksWrapper = () => {
     <Section className="bg-brandingBlue-900">
       <Container>
         <div className="grid grid-cols-4">
-          <FooterCol>
-            <FooterLinkHeader>RLM Affairs</FooterLinkHeader>
-            {footerLinks1.map((link) => (
-              <FooterLink key={link.label} href={link.href}>
-                {link.label}
-              </FooterLink>
-            ))}
-          </FooterCol>
-          <FooterCol>
-            {footerLinks2.map((link) => (
-              <FooterLink key={link.label} href={link.href}>
-                {link.label}
-              </FooterLink>
-            ))}
-          </FooterCol>
-          <FooterCol>
-            <FooterLinkHeader>Social</FooterLinkHeader>
-            {footerLinks3.map((link) => (
-              <FooterLink key={link.label} href={link.href}>
-                {link.label}
-              </FooterLink>
-            ))}
-          </FooterCol>
+          {footerLinks.map((col, idx) => (
+            <FooterCol key={idx}>
+              {col.title && <FooterLinkHeader>{col.title}</FooterLinkHeader>}
+              {col.links.map((link) => (
+                <FooterLink key={link.label} href={link.href}>
+                  {link.label}
+                </FooterLink>
+              ))}
+            </FooterCol>
+          ))}
           <div className="flex flex-col justify-end gap-8 text-white">
             <div className="space-y-2">
               <div>Have Questions?</div>
