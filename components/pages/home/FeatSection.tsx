@@ -14,7 +14,7 @@ type FeatSectionProps = {
   heading: string;
   body: string;
   linkLabel: string;
-  link?: string;
+  link: string;
 };
 
 const ImgCol = ({
@@ -38,12 +38,13 @@ const ContentCol = ({
   heading,
   body,
   linkLabel,
-}: Pick<FeatSectionProps, "heading" | "body" | "linkLabel">) => {
+  link,
+}: Pick<FeatSectionProps, "heading" | "body" | "linkLabel" | "link">) => {
   return (
     <div className="col-span-4 space-y-8">
       <Heading level="h2">{heading}</Heading>
       <BodyText>{body}</BodyText>
-      <ButtonLink>{linkLabel}</ButtonLink>
+      <ButtonLink href={link}>{linkLabel}</ButtonLink>
     </div>
   );
 };
@@ -63,11 +64,21 @@ export const FeatSection = ({
         {imgLeft ? (
           <>
             <ImgCol imgSrc={imgSrc} imgAlt={imgAlt} />
-            <ContentCol heading={heading} body={body} linkLabel={linkLabel} />
+            <ContentCol
+              heading={heading}
+              body={body}
+              linkLabel={linkLabel}
+              link={link}
+            />
           </>
         ) : (
           <>
-            <ContentCol heading={heading} body={body} linkLabel={linkLabel} />
+            <ContentCol
+              heading={heading}
+              body={body}
+              linkLabel={linkLabel}
+              link={link}
+            />
             <ImgCol imgSrc={imgSrc} imgAlt={imgAlt} />
           </>
         )}

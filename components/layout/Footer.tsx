@@ -42,11 +42,11 @@ const FooterLinksWrapper = () => {
           <div className="flex flex-col justify-end gap-8 text-white">
             <div className="space-y-2">
               <div>Have Questions?</div>
-              <ButtonLink>contact us</ButtonLink>
+              <ButtonLink href="/">contact us</ButtonLink>
             </div>
             <div className="space-y-2">
               <div>Have Questions?</div>
-              <ButtonLink>contact us</ButtonLink>
+              <ButtonLink href="/">contact us</ButtonLink>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ export const Footer = () => {
                 Starting at $279k or $1,671/mo including installation.
               </div>
             </div>
-            <ButtonLink>schedule a tour</ButtonLink>
+            <ButtonLink href="/">schedule a tour</ButtonLink>
             <div className="text-sm">
               <div className="font-light text-brandingGrey-400">
                 Not in California?

@@ -32,6 +32,7 @@ export default function Home() {
         heading="Venue Feature"
         body="Floral Showroom: RLM Affairs is a full-service florist serving North Georgia for 40 years. Our award winning designers offer exquisite attention to detail. Whether it’s a single rose or decor for an entire Gala every bloom is hand picked and sourced eco friendly. Our retail storefront offers modern & unique items keeping everyone in mind"
         linkLabel="schedule a tour"
+        link="/"
       />
       <FullImgSection />
       <div className="relative">
@@ -48,6 +49,7 @@ export default function Home() {
           heading="Renowned Catering"
           body="Floral Showroom: RLM Affairs is a full-service florist serving North Georgia for 40 years. Our award winning designers offer exquisite attention to detail. Whether it’s a single rose or decor for an entire Gala every bloom is hand picked and sourced eco friendly. Our retail storefront offers modern & unique items keeping everyone in mind"
           linkLabel="have a taste"
+          link={""}
         />
       </div>
       <HomeSlider />

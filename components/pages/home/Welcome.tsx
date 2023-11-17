@@ -39,7 +39,7 @@ export const Welcome = () => {
             meticulous event planning, to creating magical receptions.
           </BodyText>
           <div>
-            <ButtonLink>schedule a tour</ButtonLink>
+            <ButtonLink href="/">schedule a tour</ButtonLink>
           </div>
         </div>
         <div className="mx-auto">
