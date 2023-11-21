@@ -11,15 +11,12 @@ type ButtonLinkProps = ButtonLinkVariants & {
   isExternal?: boolean;
 };
 
-//TODO: add hover animations
-//TODO: add shadows
-
 const ButtonLinkVariants = cva(
-  "inline-flex rounded-lg px-5 py-3 text-lg font-medium capitalize shadow-md",
+  "inline-flex rounded-lg px-5 py-3 hover:shadow-lg text-lg capitalize shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300",
   {
     variants: {
       color: {
-        dark: "bg-brandingGreen-400 text-white ",
+        dark: "bg-brandingGreen-400 text-white hover:bg-brandingGreen-300",
         light: "bg-white text-black",
       },
       width: {
