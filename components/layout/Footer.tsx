@@ -42,11 +42,15 @@ const FooterLinksWrapper = () => {
           <div className="flex flex-col justify-end gap-8 text-white">
             <div className="space-y-2">
               <div>Have Questions?</div>
-              <ButtonLink href="/">contact us</ButtonLink>
+              <ButtonLink href="/" color="light" width="full">
+                contact us
+              </ButtonLink>
             </div>
             <div className="space-y-2">
               <div>Have Questions?</div>
-              <ButtonLink href="/">contact us</ButtonLink>
+              <ButtonLink href="/" color="light" width="full">
+                contact us
+              </ButtonLink>
             </div>
           </div>
         </div>
