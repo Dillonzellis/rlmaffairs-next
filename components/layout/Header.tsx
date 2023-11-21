@@ -17,7 +17,7 @@ export const Header = () => {
   return (
     <header>
       <nav>
-        <ul className="flex items-center justify-center gap-8">
+        <ul className="flex items-center justify-center gap-14">
           {navLinks.map((link) =>
             link.isLogo ? (
               <li key="logo">
@@ -27,6 +27,7 @@ export const Header = () => {
                     alt={link.label}
                     height={123}
                     width={124}
+                    quality={100}
                   />
                 </Link>
               </li>
