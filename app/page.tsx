@@ -8,12 +8,12 @@ import { Welcome } from "@/components/pages/home/Welcome";
 import Image from "next/image";
 
 // TODO: Fix all shadows
-// TODO: fix text colors all white or black?
+// TODO: add onscroll loadin animations
 
 export default function Home() {
   return (
     <main>
-      <div className="py-4">
+      <div className="pb-4 pt-2">
         <Image
           className="mx-auto"
           src="/hero-vid-placeholder.png"
