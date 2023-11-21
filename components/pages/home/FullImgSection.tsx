@@ -4,8 +4,6 @@ import { Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 import Image from "next/image";
 
-// TODO: pass props and options to flip horizontally
-
 export const FullImgSection = () => {
   return (
     <Section>
