@@ -14,14 +14,14 @@ const FooterCol = ({ children }: ChildrenProps) => {
 
 const FooterLink = ({ children, ...props }: FooterLinkProps) => {
   return (
-    <a className="text-3xl text-white" {...props}>
+    <a className="text-3xl text-slate-50" {...props}>
       {children}
     </a>
   );
 };
 
 const FooterLinkHeader = ({ children }: ChildrenProps) => {
-  return <div className="text-3xl font-light text-white/60">{children}</div>;
+  return <div className="text-3xl font-light text-slate-50/60">{children}</div>;
 };
 
 const FooterLinksWrapper = () => {
@@ -39,7 +39,7 @@ const FooterLinksWrapper = () => {
               ))}
             </FooterCol>
           ))}
-          <div className="flex flex-col justify-end gap-8 text-white">
+          <div className="flex flex-col justify-end gap-8 text-slate-50">
             <div className="space-y-2">
               <div>Have Questions?</div>
               <ButtonLink href="/" color="light" width="full">
@@ -66,7 +66,7 @@ export const Footer = () => {
         <Container className="pb-9">
           <div className="space-y-9 text-center">
             <div className="mx-auto max-w-2xl space-y-2">
-              <Heading level="h2" className="text-white">
+              <Heading level="h2" className="text-slate-50">
                 Available now in California.
               </Heading>
               <div className="text-4xl font-light text-brandingGrey-400">
@@ -78,7 +78,7 @@ export const Footer = () => {
               <div className="font-light text-brandingGrey-400">
                 Not in California?
               </div>
-              <div className="text-white">Tell us where to expand next</div>
+              <div className="text-slate-50">Tell us where to expand next</div>
             </div>
           </div>
         </Container>
@@ -87,7 +87,7 @@ export const Footer = () => {
       <FooterLinksWrapper />
       <div className="bg-brandingBlue-900">
         <Container>
-          <div className="flex justify-between py-8 text-sm text-white">
+          <div className="flex justify-between py-8 text-sm text-slate-50">
             <div>© 2023 RLM Affairs LLC.</div>
             <div className="flex gap-8">
               <div>Privacy policy</div>
