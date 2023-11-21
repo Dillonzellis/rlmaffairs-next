@@ -16,8 +16,8 @@ const ButtonLinkVariants = cva(
   {
     variants: {
       color: {
-        dark: "bg-brandingGreen-400 text-white hover:bg-brandingGreen-300",
-        light: "bg-white text-black",
+        dark: "bg-brandingGreen-400 text-slate-50 hover:bg-brandingGreen-300",
+        light: "bg-slate-50 text-black",
       },
       width: {
         full: "w-full justify-center",

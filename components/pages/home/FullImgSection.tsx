@@ -10,7 +10,7 @@ export const FullImgSection = () => {
       <div className="relative">
         <Image src="/floral-artist.png" alt="" height={724} width={1282} />
         <Container>
-          <div className="absolute left-8 top-1/2 -translate-y-1/2 space-y-6 rounded-xl bg-brandingGreen-400/80 px-6 py-10 text-white backdrop-blur">
+          <div className="absolute left-8 top-1/2 -translate-y-1/2 space-y-6 rounded-xl bg-brandingGreen-400/80 px-6 py-10 text-slate-50 backdrop-blur">
             <Heading level="h2" size="largest">
               Floral Artist
             </Heading>
