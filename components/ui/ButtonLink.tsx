@@ -12,7 +12,6 @@ type ButtonLinkProps = ButtonLinkVariants & {
 };
 
 //TODO: add hover animations
-//TODO: add white variance
 //TODO: add shadows
 
 const ButtonLinkVariants = cva(
@@ -44,7 +43,12 @@ export const ButtonLink = ({
   const commonClass = cn(ButtonLinkVariants({ color, width }), className);
 
   return isExternal ? (
-    <a href={href} className={commonClass}>
+    <a
+      href={href}
+      className={commonClass}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {children}
     </a>
   ) : (
