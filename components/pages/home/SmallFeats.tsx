@@ -1,27 +1,34 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/ui/Section";
 import Image from "next/image";
+import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
-
-//TODO: add shadows
-//TODO: add hover animations
 
 type FeatProps = {
   title: string;
   linkText: string;
+  href: string;
   imgSrc: string;
   imgAlt: string;
   bgColor: string;
 };
 
-const Feat = ({ title, linkText, imgSrc, imgAlt, bgColor }: FeatProps) => {
+const Feat = ({
+  title,
+  linkText,
+  href,
+  imgSrc,
+  imgAlt,
+  bgColor,
+}: FeatProps) => {
   return (
     <div className="relative">
-      <div
-        className={`absolute left-8 top-8 rounded-xl ${bgColor} p-4 text-white backdrop-blur-sm`}
+      <Link
+        href={href}
+        className={`absolute left-8 top-8 rounded-xl ${bgColor} p-4 text-slate-50 backdrop-blur-sm duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-slate-950/30 hover:backdrop-blur-0`}
       >
         <div>
-          <div className="text-lg font-light text-white/70">{title}</div>
+          <div className="text-lg font-light text-slate-50/70">{title}</div>
           <div className="flex items-center gap-2 text-xl">
             {linkText}
             <span>
@@ -29,7 +36,7 @@ const Feat = ({ title, linkText, imgSrc, imgAlt, bgColor }: FeatProps) => {
             </span>
           </div>
         </div>
-      </div>
+      </Link>
       <Image
         src={imgSrc}
         alt={imgAlt}
@@ -49,16 +56,18 @@ export const SmallFeats = () => {
           <Feat
             title="Visit us in Gainesville"
             linkText="Book a Tour"
+            href="/"
             imgSrc="/venue-feature-sm.png"
             imgAlt=""
-            bgColor="bg-brandingGold-400/80 "
+            bgColor="bg-brandingGold-400/80 hover:bg-brandingGold-400"
           />
           <Feat
             title="Renowned Catering"
             linkText="Have a Taste"
+            href="/"
             imgSrc="/catering-feat-sm.png"
             imgAlt=""
-            bgColor="bg-brandingGreen-400/80 "
+            bgColor="bg-brandingGreen-400/80 hover:bg-brandingGreen-400"
           />
         </div>
       </Container>
